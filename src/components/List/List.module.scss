@@ -1,0 +1,25 @@
+@import "src/styles/variables";
+
+.list {
+  padding-left: 0;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &_title {
+      color: lighten($primary, 20%);
+    }
+
+    &_value {
+      color: white;
+    }
+  }
+}

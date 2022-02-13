@@ -1,0 +1,40 @@
+@import "src/styles/variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  background: #151515;
+
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 10px;
+
+  @include media-up(sm) {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  @include media-up(md) {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  @include media-up(lg) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  @include media-up(xl) {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  @include media-up(xxl) {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}

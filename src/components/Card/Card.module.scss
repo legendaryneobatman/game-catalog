@@ -1,0 +1,37 @@
+@import "src/styles/variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  max-height: 400px;
+  width: 100%;
+  cursor: pointer;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    color: white;
+    margin-top: 0;
+    text-decoration: none;
+  }
+
+  &__body {
+    padding: 15px;
+    background: $secondary;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
